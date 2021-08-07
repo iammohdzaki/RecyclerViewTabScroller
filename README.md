@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/iammohdzaki/RecyclerViewTabScroller.svg)](https://jitpack.io/#iammohdzaki/RecyclerViewTabScroller)
+
 # RecyclerViewTabScroller
 
 Custom RecyclerView that synchronizes a tab layout with the recycler view items as a user scrolls through the list.
@@ -19,7 +21,7 @@ allprojects {
 Step 2. Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.iammohdzaki:$latest_version'
+	        implementation 'com.github.iammohdzaki:RecyclerViewTabScroller:$latest_version'
 	}
 ```
 How To Use
