@@ -40,7 +40,6 @@ class RecyclerViewTabScroller @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,
-    var smoothScroll: Boolean = true
 ) : RecyclerView(context, attrs, defStyleAttr), TabLayout.OnTabSelectedListener {
 
 
@@ -48,6 +47,11 @@ class RecyclerViewTabScroller @JvmOverloads constructor(
     private var attachedTabLayout: TabLayout? = null
     private var ignoreScroll: Boolean = false
     private var ignoreTabSelect: Boolean = false
+    private var smoothScroll: Boolean = true
+
+    fun setSmoothScroll(smoothScroll: Boolean) {
+        this.smoothScroll = smoothScroll
+    }
 
     fun setCountItemsByTabIndex(listOfCounts: List<Int>) {
         countItemsByTabIndex = listOfCounts
